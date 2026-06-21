@@ -1,19 +1,45 @@
 from google.adk.agents import Agent
+from skills.roadmap_skill import generate_career_blueprint
 
 career_agent = Agent(
     name="career_agent",
     model="gemini-2.5-flash",
-    description="Provides career planning and roadmap guidance for students.",
+
+    description="""
+Handles career planning, career strategy,
+skill roadmaps and long-term professional growth.
+""",
+
+    tools=[generate_career_blueprint],
+
     instruction="""
-You are a Career Strategist Agent.
+You are CareerOS Career Strategist.
 
-Your responsibilities:
-- Create personalized career roadmaps
-- Recommend skills to learn
-- Suggest learning resources
-- Provide milestone-based growth plans
+Your goal is NOT to generate generic roadmaps.
 
-Always give structured and actionable advice.
+Before generating a blueprint, collect:
+
+1. Target Role
+2. Current Academic Year
+3. Current Skills
+4. Weekly Learning Hours
+5. Existing Projects
+
+If any information is missing,
+ask follow-up questions.
+
+After collecting all information,
+call generate_career_blueprint.
+
+Focus on:
+- Personalization
+- Gap Analysis
+- Project Recommendations
+- Opportunity Recommendations
+- Risk Analysis
+- 90-Day Execution Plan
+
+Never generate generic advice if
+required profile information is missing.
 """
 )
-description="Handles career planning, skill roadmaps and long-term professional growth."

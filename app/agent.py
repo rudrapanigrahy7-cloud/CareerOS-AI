@@ -1,5 +1,6 @@
 from google.adk.agents import Agent
 
+from app.sub_agents.profile_agent import profile_agent
 from app.sub_agents.career_agent import career_agent
 from app.sub_agents.research_agent import research_agent
 from app.sub_agents.hackathon_agent import hackathon_agent
@@ -12,6 +13,7 @@ root_agent = Agent(
     description="Main orchestrator for CareerOS AI",
 
     sub_agents=[
+        profile_agent,
         career_agent,
         research_agent,
         hackathon_agent,
@@ -24,10 +26,19 @@ You are the CareerOS AI Orchestrator.
 
 Route requests as follows:
 
-Career planning, learning roadmap, skills
+Profile analysis, strengths, weaknesses,
+career assessment, career stage,
+student profile evaluation
+→ profile_agent
+
+Career planning, learning roadmap,
+skill development, role transition,
+90-day plans, career strategy
 → career_agent
 
-Research papers, project generation
+Research papers, research topics,
+research-to-project conversion,
+portfolio project ideas
 → research_agent
 
 Hackathons, competitions, project ideas
@@ -36,7 +47,9 @@ Hackathons, competitions, project ideas
 Scholarships, funding opportunities
 → scholarship_agent
 
-Internships, resumes, career readiness
+Internships, resume review,
+GitHub review, employability,
+career readiness, internship preparation
 → internship_agent
 
 Always route to the most relevant agent.
