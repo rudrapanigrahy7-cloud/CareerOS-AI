@@ -1,322 +1,105 @@
 def generate_career_blueprint(
-    target_role: str,
-    current_year: str,
-    current_skills: str,
-    weekly_hours: str,
-    current_projects: str
+    target_role:str,
+    current_year:str,
+    current_skills:str,
+    weekly_hours:str,
+    current_projects:str
 ) -> str:
 
     return f"""
 ==================================================
-🚀 CAREEROS STRATEGIC BLUEPRINT
+🚀 CAREEROS INTELLIGENCE REPORT
 ==================================================
 
-🎯 TARGET ROLE
+TARGET ROLE
 {target_role}
 
-==================================================
-👤 STUDENT PROFILE
-==================================================
+ACADEMIC YEAR
+{current_year}
 
-Academic Year: {current_year}
-Current Skills: {current_skills}
-Weekly Learning Hours: {weekly_hours}
-Current Projects: {current_projects}
+CURRENT SKILLS
+{current_skills}
 
-==================================================
-📊 PERSONALIZED READINESS ASSESSMENT
-==================================================
+WEEKLY LEARNING HOURS
+{weekly_hours}
 
-Target Role:
-{target_role}
-
-Current Position:
-Based on the provided profile, you are in the early-to-growth stage
-of your journey toward becoming a {target_role}.
-
-Strengths:
-• Existing skills: {current_skills}
-• Existing projects: {current_projects}
-
-Growth Areas:
-• Portfolio Development
-• Practical Experience
-• Industry Exposure
-• Networking
-• Communication Skills
+CURRENT PROJECTS
+{current_projects}
 
 ==================================================
-🎯 GAP ANALYSIS
+⚠️ IMPORTANT
 ==================================================
 
-To become a successful {target_role}, focus on building:
+Use the profile above and create:
 
-✓ Technical Skills
-✓ Real-world Projects
-✓ GitHub Portfolio
-✓ Internship Experience
-✓ Problem Solving
-✓ Professional Presence
-✓ Communication Skills
+1. ROLE DECOMPOSITION
 
-==================================================
-🛣️ LEARNING BLUEPRINT
-==================================================
+- Core Knowledge Areas
+- Core Skills
+- Core Tools
+- Portfolio Evidence Required
 
-PHASE 1 — FOUNDATION
+2. CAREER STAGE ANALYSIS
 
-• Python / Core Programming
-• Git & GitHub
-• Problem Solving
-• Linux / Terminal Basics
+Classify as:
+- Explorer
+- Builder
+- Competitive
+- Internship Ready
 
-Deliverable:
-✅ Public GitHub Profile
+Explain why.
 
---------------------------------------------------
+3. READINESS SCORE
 
-PHASE 2 — CORE SKILLS
+Score:
+__/100
 
-• Data Structures & Algorithms
-• SQL
-• APIs
-• Software Engineering Basics
+Explain reasoning.
 
-Deliverable:
-✅ Two Functional Projects
+4. TOP 3 BOTTLENECKS
 
---------------------------------------------------
+Rank them by impact.
 
-PHASE 3 — SPECIALIZATION
+5. MISSING EVIDENCE
 
-Focus directly on:
+What proof is missing from the profile?
 
-{target_role}
+6. ROLE-SPECIFIC PROJECT ROADMAP
 
-Learn:
-• Industry Tools
-• Frameworks
-• Best Practices
-• Real-world Workflows
+Beginner Project
+Intermediate Project
+Advanced Project
+Flagship Project
 
-Deliverable:
- Specialization Project
+7. DETAILED 7-DAY ACTION PLAN
 
---------------------------------------------------
+For each day provide:
 
-PHASE 4 — PORTFOLIO BUILDING
+- Task
+- Time Required
+- Deliverable
+- Why it matters
 
-• Build flagship projects
-• Improve documentation
-• Learn deployment
-• Create professional profile
+8. DETAILED 90-DAY EXECUTION PLAN
 
-Deliverable:
- Portfolio Website
- Optimized GitHub
+Month 1
+Month 2
+Month 3
 
-==================================================
- PROJECT BLUEPRINT
-==================================================
+Include measurable outcomes.
 
-PROJECT 1 — BEGINNER
+9. OPPORTUNITY STRATEGY
 
-Goal:
-Solve one personal problem.
+Recommend:
+- Communities
+- Hackathons
+- Competitions
+- Internships
+- Open Source
 
-Examples:
-• Habit Tracker
-• Expense Tracker
-• Study Planner
+10. FINAL RECOMMENDATION
 
---------------------------------------------------
-
-PROJECT 2 — INTERMEDIATE
-
-Goal:
-Build a complete application.
-
-Focus:
-Architecture + Deployment
-
---------------------------------------------------
-
-PROJECT 3 — ADVANCED
-
-Goal:
-Create a project recruiters remember.
-
-Focus:
-Innovation + Impact
-
-==================================================
- OPPORTUNITY BLUEPRINT
-==================================================
-
-AFTER FOUNDATION
-
-• Coding Challenges
-• Student Communities
-
-AFTER CORE SKILLS
-
-• Hackathons
-• Open Source Programs
-
-AFTER SPECIALIZATION
-
-• Research Projects
-• Freelancing
-• Technical Writing
-
-AFTER PORTFOLIO STAGE
-
-• Internships
-• Startup Opportunities
-• Networking
-
-==================================================
- RISK ANALYSIS
-==================================================
-
-RISK #1
-Tutorial Hell
-
-ACTION:
-Build after every major topic.
-
---------------------------------------------------
-
-RISK #2
-No Public Portfolio
-
-ACTION:
-Publish every project.
-
---------------------------------------------------
-
-RISK #3
-Inconsistent Learning
-
-ACTION:
-Create weekly learning blocks.
-
---------------------------------------------------
-
-RISK #4
-Learning Without Application
-
-ACTION:
-Turn concepts into projects.
-
---------------------------------------------------
-
-RISK #5
-Late Internship Preparation
-
-ACTION:
-Start preparing early.
-
-==================================================
-📅 NEXT 7-DAY ACTION PLAN
-==================================================
-
-DAY 1
-Define your target role.
-
-DAY 2
-Optimize GitHub profile.
-
-DAY 3
-Complete one focused learning module.
-
-DAY 4
-Start a mini-project.
-
-DAY 5
-Continue building.
-
-DAY 6
-Push code publicly.
-
-DAY 7
-Review progress.
-
-==================================================
-📆 90-DAY EXECUTION PLAN
-==================================================
-
-MONTH 1 — FOUNDATION
-
-Week 1
-• Setup learning environment
-• Create GitHub profile
-
-Week 2
-• Core programming practice
-
-Week 3
-• Git & GitHub mastery
-
-Week 4
-• Complete Project #1
-
-Outcome:
-✅ First Public Project
-
---------------------------------------------------
-
-MONTH 2 — DEVELOPMENT
-
-Week 5
-• Core concepts
-
-Week 6
-• Problem solving
-
-Week 7
-• Build Project #2
-
-Week 8
-• Improve project quality
-
-Outcome:
-✅ Intermediate Project
-
---------------------------------------------------
-
-MONTH 3 — ACCELERATION
-
-Week 9
-• Advanced concepts
-
-Week 10
-• Portfolio improvements
-
-Week 11
-• Resume + LinkedIn
-
-Week 12
-• Internship / Hackathon applications
-
-Outcome:
-✅ Recruiter-Ready Profile
-
-==================================================
-🔥 CAREEROS FINAL RECOMMENDATION
-==================================================
-
-Measure progress by:
-
-• Projects Built
-• Problems Solved
-• Code Published
-• Opportunities Created
-
-Build.
-Publish.
-Iterate.
-
-That is the fastest path toward becoming a successful
-{target_role}.
+Provide a realistic assessment of how far
+the student currently is from becoming
+a successful {target_role}.
 """
